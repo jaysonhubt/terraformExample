@@ -2,7 +2,10 @@ https://www.terraform.io/
 
 #Directory structrue
 - main.tf: Main terraform file
-- .terraform:  
+- variable.tf: Define variables will be used in main.tf
+- terraform.tfvars: Default variable values
+- production.tfvars: Run with other variable file with option `-var-file`. Example `terraform apply -var-file="production.tfvars"`
+- terraform.lock.hcl: similar to composer.lock, package-lock.json
 
 #Basic command:
 
@@ -13,4 +16,4 @@ https://www.terraform.io/
 
 - Lifecycle
 
-![asd](https://images.viblo.asia/7377661a-bf59-4260-810d-80e9aa5789b0.jpg)
+![asd](https://raw.githubusercontent.com/jaysonhubt/terraformExample/master/assets/life-cycle.webp)
